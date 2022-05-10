@@ -68,7 +68,7 @@ class Dataset():
             vis_objects += scene
         self.visualization(vis_objects)
 
-    @classmethod
+    @staticmethod
     def visualization(cls, objects: list):
         o3d.visualization.draw_geometries(objects)
 
