@@ -69,7 +69,7 @@ class Dataset():
         self.visualization(vis_objects)
 
     @staticmethod
-    def visualization(cls, objects: list):
+    def visualization(objects: list):
         o3d.visualization.draw_geometries(objects)
 
 
