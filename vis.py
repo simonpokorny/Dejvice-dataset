@@ -9,7 +9,7 @@ class Dataset():
         """
         :param dir: Path to dataset Dejvice
         """
-        self.pcl = os.listdir(dir / "data")
+        self.pcl = os.listdir(dir / "pcl")
         self.pcl.sort()
         self.gps = os.listdir(dir / "poses")
         self.gps.sort()
@@ -75,7 +75,7 @@ class Dataset():
 
 if __name__ == "__main__":
 
-    scr_dir = Path("dataset_old")
+    scr_dir = Path("data")
     dataset = Dataset(scr_dir)
     # dataset.vis_frame(10, frame=True)
     # dataset.vis_seq((10, 20), BW=True, frame=True)
