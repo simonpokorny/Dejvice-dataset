@@ -17,7 +17,7 @@ class Dataset():
         self.cmap = matplotlib.cm.get_cmap('Greys')
 
     def __getitem__(self, item):
-        data = np.load(self.dir / "data" / self.pcl[item])
+        data = np.load(self.dir / "pcl" / self.pcl[item])
         pointcloud = data["pcl"]
         T = np.loadtxt(self.dir / "poses" / self.gps[item])
         return pointcloud, T
