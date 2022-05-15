@@ -11,3 +11,6 @@ Legenda vizualizace:
 - Modrá : silnice
 - Zelená : zeleň
 - Fialová : přechody
+
+
+![](vizualizace.png)
