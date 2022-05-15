@@ -13,4 +13,4 @@ Legenda vizualizace:
 - Fialová : přechody
 
 
-![](vizualizace.png)
+![](images/vizualizace.png)
