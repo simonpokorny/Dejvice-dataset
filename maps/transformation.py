@@ -11,8 +11,8 @@ https://www.google.com/maps/place/50°06'02.1%22N+14°23'30.5%22E/@50.1005833,14
 
 """
 
-REF_POINT = np.array([50.100595, 14.395427, 225.])
-HELPER = np.array([50.100595, 14.391806, 225.])
+REF_POINT = np.array([14.395427, 50.100595, 225.])
+HELPER = np.array([14.391806, 50.100595, 225.])
 
 
 def transformorm_point(coords: np.array([])):
@@ -23,20 +23,21 @@ def transformorm_point(coords: np.array([])):
     :return:
     """
 
-    point_REF = (REF_POINT[0], REF_POINT[1])
     point_HELPER = (HELPER[0], HELPER[1])
-    point_pcl = (coords[1], coords[0])
+    point_REF = (REF_POINT[0], REF_POINT[1])
+    point_pcl = (coords[0], coords[1])
 
     h = haversine(point_REF, point_pcl, unit=Unit.METERS)
     r = haversine(point_HELPER, point_pcl, unit=Unit.METERS)
     p = haversine(point_REF, point_HELPER, unit=Unit.METERS)
 
-    if coords[0] > 50.100595:
-        angle = np.arccos((p ** 2 + h ** 2 - r ** 2) / (2 * h * p))
-        angle += np.pi
-    else:
+    # angle in clockwise direction
+    if coords[1] > 50.100595: # higher in y-axis
         angle = np.arccos((p ** 2 + h ** 2 - r ** 2) / (2 * h * p))
         angle = np.pi - angle
+    else:
+        angle = np.arccos((p ** 2 + h ** 2 - r ** 2) / (2 * h * p))
+        angle += np.pi
 
     y = h * np.cos(angle)
     x = h * np.sin(angle)
