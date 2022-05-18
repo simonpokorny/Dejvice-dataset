@@ -11,7 +11,7 @@ def polygon_str2np(element: str):
 
 
 def process_csv(filename: Path()):
-    df = pd.read_csv(f'HD_maps_polygons_csv/{filename}.csv')
+    df = pd.read_csv(f'HD_maps_csv/{filename}.csv')
     df["polygon_numpy"] = " "
     df["polygon_numpy_calibrated"] = " "
 
@@ -22,13 +22,13 @@ def process_csv(filename: Path()):
         for idx_p, point in enumerate(fe):
             fe_calib[idx_p] = transformorm_point(coords=point)
         df["polygon_numpy_calibrated"][idx] = fe_calib
-    #filename = Path(str(filename) + "_calibrated")
-    df.to_csv(f"HD_maps_polygons_csv/{filename}.csv", index=False)
+    # filename = Path(str(filename) + "_calibrated")
+    df.to_csv(f"HD_maps_csv/{filename}.csv", index=False)
 
 
 def main():
-    files = os.listdir("HD_maps_polygons_csv")
-    #files = ["HD_map-zelen_calibrated.csv"]
+    files = os.listdir("HD_maps_csv")
+    # files = ["HD_map_side_streets.csv"]
     for file in files:
         if file == ".DS_Store":
             continue
