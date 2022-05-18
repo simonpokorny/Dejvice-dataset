@@ -1,7 +1,7 @@
 # Dataset Dejvice
 
 Motivation for collecting the dataset was an idea to automate a labeling process. We captured Dejvice's roundabout area in different time. This allow us to create a HD map and split points into static and dynamic subset. Based on this division and localization in HD maps we can create the bounding boxes around the points and statistically decide about a class. 
- 
+
 
 ## Setup 
 
