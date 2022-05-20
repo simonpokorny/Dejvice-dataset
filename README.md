@@ -103,13 +103,16 @@ maps/
 - Fialová - zebras
 
 
-### Google Maps - selection of Areas
-![](maps/images/vizualizace.png)
 
 
-### HD Map with trajectories
+### HD Map with trajectories and Google Maps with selection of Areas
 
-![](maps/images/vizualizace_trajectories.jpeg)
+
+<p float="left">
+  <img src="maps/images/vizualizace_trajectories.jpeg" width=40% />
+  <img src="maps/images/vizualizace.png" width=40% /> 
+</p>
+
 ### Additional data
 
 For 5 sequences was also captured mp4 video of front view.
