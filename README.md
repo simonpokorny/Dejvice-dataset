@@ -16,7 +16,7 @@ GPS
 - todo specs
 ```
 
-## Calibration
+## Transformation
 
 TODO
 
@@ -49,7 +49,7 @@ Visualization of sequences in Google map is available on [map link](https://www.
 ### Dataset structure
 
 ```
- data/
+data/
     pcl/
         01000001.npz
         01000002.npz
@@ -60,15 +60,52 @@ Visualization of sequences in Google map is available on [map link](https://www.
         01000002.txt
         01000003.txt
         ...
-    maps/
-        gpx_files/
-            seq1.gpx
-            ...
-            seq9.gpx
   -README.md
 
 ```
 
+# HD Map
+
+```
+maps/
+    gpx_files/
+        seq1.gpx
+        ...
+        seq9.gpx
+    images/
+    HD_maps_csv/
+        HD_map_crosswalk.csv 
+        HD_map_vegatable.csv 
+        HD_map_side_streets.csv 
+        HD_map_main_road.csv
+        
+```
+
+#### CSV files
+
+- HD_map_crosswalk.csv 
+  - crosswalk, area with pedestriants on the road
+- HD_map_vegatable.csv 
+  - area with greenery (only center of the roundabout)
+- HD_map_side_streets.csv 
+    - road, which were captured during scanning
+- HD_map_main_road.csv
+    - road, which were captured during scanning and car drove on them
+
+
+#### Legend in visualization: 
+- Blue - road
+- Green - vegetable
+- Fialová - zebras
+
+
+### Google Maps - selection of Areas
+![](maps/images/vizualizace.png)
+
+
+### HD Map with trajectories
+
+![](maps/images/vizualizace_trajectories.jpeg)
 ### Additional data
 
 For 5 sequences was also captured mp4 video of front view.
