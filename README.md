@@ -22,7 +22,7 @@ We transformed pointclouds from latitude and longtitude coordinates to xyz globa
 
 For pointclouds, we also used the heading information from GPS. Thus, we were able to rotate the pointcloud in a right direction. Additionally, we add the transformation from GPS to a center of the LiDAR ([gps2lidar.txt](data/gps2lidar.txt)).
 
-![](preprocessing/images/calibration.jpeg)
+![](maps/images/calibration.jpeg)
 
 
 ## Description of the data
