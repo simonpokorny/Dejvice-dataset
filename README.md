@@ -18,11 +18,16 @@ GPS
 
 ## Transformation
 
+
+
+
+<img align="right" src="maps/images/calibration.jpeg" width=15%>
+
 We transformed pointclouds from latitude and longtitude coordinates to xyz global coordinate system. The origin is placed into the center of the Dejvice's roundabout. See [code](maps/transformation.py) for HD maps. 
 
 For pointclouds, we also used the heading information from GPS. Thus, we were able to rotate the pointcloud in a right direction. Additionally, we add the transformation from GPS to a center of the LiDAR ([gps2lidar.txt](data/gps2lidar.txt)).
 
-![](maps/images/calibration.jpeg)
+<br clear="right"/>
 
 
 ## Description of the data
@@ -103,13 +108,16 @@ maps/
 - Fialová - zebras
 
 
-### Google Maps - selection of Areas
-![](maps/images/vizualizace.png)
 
 
-### HD Map with trajectories
+### HD Map with trajectories and Google Maps with selection of Areas
 
-![](maps/images/vizualizace_trajectories.jpeg)
+
+<p float="left">
+  <img src="maps/images/vizualizace_trajectories.jpeg" width=40% />
+  <img src="maps/images/vizualizace.png" width=40% /> 
+</p>
+
 ### Additional data
 
 For 5 sequences was also captured mp4 video of front view.
