@@ -26,7 +26,8 @@ def transformorm_point(coords: np.array([])):
     point_REF = (REF_POINT[0], REF_POINT[1])
     point_pcl = (coords[1], coords[0])  # HD maps are in (lon, lat), thus tf to (lat, lon)
 
-    h = haversine(point_REF, point_pcl, unit=Unit.METERS)  # (lat, lon)
+    # input - (lat, lon)
+    h = haversine(point_REF, point_pcl, unit=Unit.METERS)
     r = haversine(point_HELPER, point_pcl, unit=Unit.METERS)
     p = haversine(point_REF, point_HELPER, unit=Unit.METERS)
 

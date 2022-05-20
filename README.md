@@ -2,7 +2,7 @@
 
 Motivation for collecting the dataset was an idea to automate a labeling process. We captured Dejvice's roundabout area in different time. This allow us to create a HD map and split points into static and dynamic subset. Based on this division and localization in HD maps we can create the bounding boxes around the points and statistically decide about a class. 
 
-![giff](/data/gif/dataset.gif)
+![](data/gif/dataset.gif)
 
 ## Setup 
 
@@ -18,7 +18,11 @@ GPS
 
 ## Transformation
 
-TODO
+We transformed pointclouds from latitude and longtitude coordinates to xyz global coordinate system. The origin is placed into the center of the Dejvice's roundabout. See [code](maps/transformation.py) for HD maps. 
+
+For pointclouds, we also used the heading information from GPS. Thus, we were able to rotate the pointcloud in a right direction. Additionally, we add the transformation from GPS to a center of the LiDAR ([gps2lidar.txt](data/gps2lidar.txt)).
+
+![](preprocessing/images/calibration.jpeg)
 
 
 ## Description of the data
