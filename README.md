@@ -114,8 +114,9 @@ maps/
 
 
 <p float="left">
-  <img src="maps/images/vizualizace_trajectories.jpeg" width=40% />
-  <img src="maps/images/vizualizace.png" width=40% /> 
+    <img src="maps/images/map_satellite_2.png" width=30% /> 
+    <img src="maps/images/vizualizace.png" width=30% /> 
+    <img src="maps/images/vizualizace_trajectories.jpeg" width=30% />
 </p>
 
 ### Additional data
