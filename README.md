@@ -2,7 +2,7 @@
 
 Motivation for collecting the dataset was an idea to automate a labeling process. We captured Dejvice's roundabout area in different time. This allow us to create a HD map and split points into static and dynamic subset. Based on this division and localization in HD maps we can create the bounding boxes around the points and statistically decide about a class. 
 
-![](data/gif/dataset.gif)
+![](additional_data/gif/dataset.gif)
 
 ## Setup 
 
@@ -122,9 +122,10 @@ maps/
 ### Additional data
 
 For 5 sequences was also captured mp4 video of front view.
-```
--todo
-```
+
+In dataset_dejvice package is also provided class Annotator, which with help of HD maps can generate for each point .npz file label (class of point from HD map) and color (RGB info about the point for visualization)
+
+
 
 ### Online Repository link
 
@@ -133,9 +134,7 @@ On github are published only 10 frames from first sequence. Link for downloading
 
 ## License
 
-??? je potreba - 
-templete:
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+??? je potreba - templete: MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 
 
