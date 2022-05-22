@@ -40,8 +40,6 @@ Visualization of sequences in Google map is available on [map link](https://www.
 ### Overview
 
 
-<img align="right" alt="map" src="https://user-images.githubusercontent.com/24698875/167591505-697f1747-d413-4c22-882e-65cd77a14079.png" width=35%>
-
 
 | seq_number | total frames | frames with accurate gps | color in map |
 | ----- | ---- | ---- | ---- |
@@ -55,6 +53,9 @@ Visualization of sequences in Google map is available on [map link](https://www.
 | seq_8 | 5570 | 3762 | ![#558B2F](https://via.placeholder.com/15/558B2F/000000?text=+) |
 | seq_9 | 1156 | 1106 | ![#097138](https://via.placeholder.com/15/097138/000000?text=+) |
 
+### Visualization of sequences
+
+<img alt="map" src="https://user-images.githubusercontent.com/24698875/167591505-697f1747-d413-4c22-882e-65cd77a14079.png" width=50%>
 
 
 ### Dataset structure
