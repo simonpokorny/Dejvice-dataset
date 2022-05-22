@@ -125,6 +125,7 @@ For 5 sequences was also captured mp4 video of front view.
 
 In dataset_dejvice package is also provided class Annotator, which with help of HD maps can generate for each point .npz file label (class of point from HD map) and color (RGB info about the point for visualization)
 
+<img width="571" alt="Screenshot 2022-05-22 at 15 22 51" src="https://user-images.githubusercontent.com/24698875/169697578-fff56c81-eb84-44a0-9236-f5bb713ec582.png" width=40%>
 
 
 ### Online Repository link
