@@ -4,7 +4,12 @@ Motivation for collecting the dataset was an idea to automate a labeling process
 
 ![](additional_data/gif/dataset.gif)
 
+
 ## Setup 
+
+<img align="right" src="maps/images/calibration.jpeg" width=25%>
+
+
 
 For collecting the data was used Oyster lidar and gps (todo name)
 ```
@@ -13,15 +18,10 @@ Oyster lidar
 - 128 lines and 45° field of view vertically
 
 GPS
-- todo specs
+- NTRIP corrections (Geodetická stanice Ondřejov)
 ```
 
 ## Transformation
-
-
-
-
-<img align="right" src="maps/images/calibration.jpeg" width=15%>
 
 We transformed pointclouds from latitude and longtitude coordinates to xyz global coordinate system. The origin is placed into the center of the Dejvice's roundabout. See [code](maps/transformation.py) for HD maps. 
 
@@ -35,7 +35,11 @@ For pointclouds, we also used the heading information from GPS. Thus, we were ab
 We captured 26563 frames, but only 18856 was available with accurate GPS. Dataset capture was divide into 9 sequnces. 
 Visualization of sequences in Google map is available on [map link](https://www.google.com/maps/d/u/0/edit?mid=1KdB8-CveT3HbCh3U-pd8nBCAsRsPD6VV&usp=sharing).
 
+
+
 ### Overview
+
+
 
 | seq_number | total frames | frames with accurate gps | color in map |
 | ----- | ---- | ---- | ---- |
@@ -49,10 +53,9 @@ Visualization of sequences in Google map is available on [map link](https://www.
 | seq_8 | 5570 | 3762 | ![#558B2F](https://via.placeholder.com/15/558B2F/000000?text=+) |
 | seq_9 | 1156 | 1106 | ![#097138](https://via.placeholder.com/15/097138/000000?text=+) |
 
-### Google maps visualization
+### Visualization of sequences
 
-<img width="615" alt="map" src="https://user-images.githubusercontent.com/24698875/167591505-697f1747-d413-4c22-882e-65cd77a14079.png">
-
+<img alt="map" src="https://user-images.githubusercontent.com/24698875/167591505-697f1747-d413-4c22-882e-65cd77a14079.png" width=50%>
 
 
 ### Dataset structure
@@ -74,6 +77,18 @@ data/
 ```
 
 # HD Map
+
+
+### HD Map with trajectories and Google Maps with selection of Areas
+
+
+<p float="left">
+    <img src="maps/images/map_satellite_2.png" width=30% /> 
+    <img src="maps/images/vizualizace.png" width=30% /> 
+    <img src="maps/images/vizualizace_trajectories.jpeg" width=30% />
+</p>
+
+### Structure
 
 ```
 maps/
@@ -110,24 +125,22 @@ maps/
 
 
 
-### HD Map with trajectories and Google Maps with selection of Areas
 
-
-<p float="left">
-    <img src="maps/images/map_satellite_2.png" width=30% /> 
-    <img src="maps/images/vizualizace.png" width=30% /> 
-    <img src="maps/images/vizualizace_trajectories.jpeg" width=30% />
-</p>
 
 ### Additional data
+
+
+<img align="right" img alt="Screenshot 2022-05-22 at 15 22 51" src="https://user-images.githubusercontent.com/24698875/169697578-fff56c81-eb84-44a0-9236-f5bb713ec582.png" width=30%>
+
 
 For 5 sequences was also captured mp4 video of front view.
 
 In dataset_dejvice package is also provided class Annotator, which with help of HD maps can generate for each point .npz file label (class of point from HD map) and color (RGB info about the point for visualization)
 
+<br clear="right"/>
 
 
-### Online Repository link
+## Online Repository link
 
 On github are published only 10 frames from first sequence. Link for downloading all dataset -> link todo
 
