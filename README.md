@@ -43,8 +43,8 @@ Visualization of sequences in Google map is available on [map link](https://www.
 
 | seq_number | total frames | frames with accurate gps | color in map |
 | ----- | ---- | ---- | ---- |
-| seq_1 | 2178 | 1906 | ![#A52714](https://via.placeholder.com/15/A52714/000000?text=+) |
-| seq_2 | 1866 | 1119 | ![#006064](https://via.placeholder.com/15/006064/000000?text=+) |
+| seq_1 | 2178 | 1906 | ![#A52714](https://via.placeholder.com/15/A52714/A52714.png?text=+) |
+| seq_2 | 1866 | 1119 | ![#006064](https://via.placeholder.com/15/006064/006064.png?text=+) |
 | seq_3 | 1905 | 1402 | ![#E65100](https://via.placeholder.com/15/E65100/000000?text=+) |
 | seq_4 | 1946 | 1809 | ![#01579B](https://via.placeholder.com/15/01579B/000000?text=+) |
 | seq_5 | 4762 | 3741 | ![#F9A825](https://via.placeholder.com/15/F9A825/000000?text=+) |
