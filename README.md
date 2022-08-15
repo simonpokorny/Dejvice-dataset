@@ -45,13 +45,13 @@ Visualization of sequences in Google map is available on [map link](https://www.
 | ----- | ---- | ---- | ---- |
 | seq_1 | 2178 | 1906 | ![#A52714](https://via.placeholder.com/15/A52714/A52714.png?text=+) |
 | seq_2 | 1866 | 1119 | ![#006064](https://via.placeholder.com/15/006064/006064.png?text=+) |
-| seq_3 | 1905 | 1402 | ![#E65100](https://via.placeholder.com/15/E65100/000000?text=+) |
-| seq_4 | 1946 | 1809 | ![#01579B](https://via.placeholder.com/15/01579B/000000?text=+) |
-| seq_5 | 4762 | 3741 | ![#F9A825](https://via.placeholder.com/15/F9A825/000000?text=+) |
+| seq_3 | 1905 | 1402 | ![#E65100](https://via.placeholder.com/15/E65100/E65100.png?text=+) |
+| seq_4 | 1946 | 1809 | ![#01579B](https://via.placeholder.com/15/01579B/01579B.png?text=+) |
+| seq_5 | 4762 | 3741 | ![#F9A825](https://via.placeholder.com/15/F9A825/F9A825.png?text=+) |
 | seq_6 | 3983 |    0 | - |
-| seq_7 | 7180 | 4011 | ![#817717](https://via.placeholder.com/15/817717/000000?text=+) |
-| seq_8 | 5570 | 3762 | ![#558B2F](https://via.placeholder.com/15/558B2F/000000?text=+) |
-| seq_9 | 1156 | 1106 | ![#097138](https://via.placeholder.com/15/097138/000000?text=+) |
+| seq_7 | 7180 | 4011 | ![#817717](https://via.placeholder.com/15/817717/817717.png?text=+) |
+| seq_8 | 5570 | 3762 | ![#558B2F](https://via.placeholder.com/15/558B2F/558B2F.png?text=+) |
+| seq_9 | 1156 | 1106 | ![#097138](https://via.placeholder.com/15/097138/097138.png?text=+) |
 
 ### Visualization of sequences
 
