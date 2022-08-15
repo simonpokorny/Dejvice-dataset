@@ -147,7 +147,7 @@ On github are published only 10 frames from first sequence. Link for downloading
 
 ## License
 
-??? je potreba - templete: MIT License - see the [LICENSE.md](LICENSE.md) file for details
+```Dejvice's Dataset``` is released under the [MIT License](LICENSE.md) -> see file for details
 
 
 
